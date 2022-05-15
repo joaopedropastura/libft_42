@@ -6,7 +6,7 @@
 /*   By: jpedro-s < jpedro-s@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 14:13:45 by jpedro-s          #+#    #+#             */
-/*   Updated: 2021/10/31 18:42:53 by jpedro-s         ###   ########.fr       */
+/*   Updated: 2021/10/08 12:05:10 by jpedro-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,22 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	len[i] = '\0';
 	return (len);
 }
+
+// preciso criar uma string e concatenar 2 strings de entrada
+// s1 seria a primeira parte
+// s2 a segunda
+
+// temos que percorrer s1 e descobrir o tamanho para
+// a partir dali, colocar s2
+
+// a func externa malloc é permitida
+// int main(void)
+// {
+// 	char const *s1;
+// 	char const *s2;
+
+// 	s1 = "macarrao";
+// 	s2 = "linguica";
+// 	ft_strjoin(s1, s2);
+// 	printf("\n%s%s\n", s1, s2);
+// }

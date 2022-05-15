@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpedro-s < jpedro-s@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: jpedro-s <jpedro-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 10:20:12 by jpedro-s          #+#    #+#             */
-/*   Updated: 2021/10/12 13:57:41 by jpedro-s         ###   ########.fr       */
+/*   Updated: 2022/05/15 02:01:40 by jpedro-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,23 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 # define INT_MAX 2147483647
-
 # define INT_MIN -2147483648
+# define MAX_LONG_INT 4294967296
+# define HEX "0123456789abcdef"
+# define HEX_UPPER "0123456789ABCDEF"
+
+# if __APPLE__
+#  define IS_MACOS 1
+# else
+#  define IS_MACOS 0
+# endif
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 128
+# endif
 
 int		ft_tolower(int c);
 int		ft_toupper(int c);
@@ -54,5 +67,15 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_base_converter(unsigned long int nbr, char *base);
+char	*ft_uitoa(unsigned int n);
+char	*get_next_line(int fd);
+char	*ft_substr_gnl(char const *s, unsigned int start, size_t len);
+int		ft_printf(const char *format, ...);
+int		ft_type_c(int chr);
+int		ft_type_s(char *str);
+int		ft_type_p(unsigned long int ptr);
+int		ft_type_diu(int nbr, char type);
+int		ft_type_x(unsigned int to_hex, char type);
 
 #endif

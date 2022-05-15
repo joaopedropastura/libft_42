@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jpedro-s < jpedro-s@student.42sp.org.br    +#+  +:+       +#+         #
+#    By: jpedro-s <jpedro-s@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/14 06:03:48 by jpedro-s          #+#    #+#              #
-#    Updated: 2021/10/13 12:06:17 by jpedro-s         ###   ########.fr        #
+#    Updated: 2022/05/15 02:06:54 by jpedro-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,12 @@ SRCS =	ft_atoi.c \
 		ft_strmapi.c \
 		ft_strncmp.c \
 		ft_strtrim.c \
+		ft_uitoa.c \
+		ft_base_converter.c \
+		get_next_line.c \
+		ft_substr_gnl.c \
+		ft_printf.c \
+		ft_types.c \
 
 NAME = libft.a
 
